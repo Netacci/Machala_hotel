@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-bg: #FBF5F5;
+  --orange: #F3684A;
+  --almost-black: #2D2A2A;
+}
+
+/* .test-wrapper {
+  background: var(--pink-bg);
+  padding: 1px;
+}
+
+.testimonials {
+  margin-top: 5%;
+}
+
+.testimonial-title {
+  color: var(--orange);
+  font-size: 1.2rem;
+  margin-left: 17%;
+}
+
+.testimonial-p {
+  color: var(--almost-black);
+  font-size: 1.5rem;
+  margin-top: 5%;
+  width: 75%;
+  margin-left: 17%;
+}
+
+.carousel-button {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 76%;
+}
+
+.carousel-button:focus {
+  outline: 0;
+}
+
+.left-button {
+  left: -1%;
+}
+
+.right-button {
+  right: -1%;
+}
+
+.arrow-img {
+  width: 55%;
+}
+
+.hide {
+  display: none;
+}
+
+.carousel {
+  text-align: center;
+  position: relative;
+}
+
+.line {
+  width: 83%;
+  height: 50%;
+  border-bottom: 2px solid var(--orange);
+  grid-column: 1/3;
+  grid-row: 2;
+  margin-top: 5%;
+  justify-self: center;
+}
+
+.carousel-container {
+  position: relative;
+  padding: 8px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  list-style: none;
+  position: relative;
+  height: 300px;
+  transition: transform 250ms ease-in;
+}
+
+.carousel-slide {
+  background: #fff;
+  margin: auto;
+  margin-top: 5%;
+  width: 66%;
+  height: 100%;
+
+  padding: 4%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.arrange-grid {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.rev-pic {
+  justify-self: end;
+  margin-top: 6%;
+}
+
+.name-tag {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 9%;
+}
+
+.name-title {
+  margin-top: 26%;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.review-text {
+  grid-column: 1/3;
+  margin: auto;
+  margin-top: 9%;
+  width: 83%;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.rating {
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+  margin-top: 10%;
+} */
+.book-room {
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+}
+
+.book-room__img {
+  width: 100%;
+  box-shadow: 0px 0px 15px 12px #FFF9F9;
+}
+
+.book {
+  background: var(--orange);
+  width: 100%;
+  margin-top: 0;
+  padding: 1px;
+  text-align: center;
+}
+
+.book-text {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 5%;
+  padding: 9%;
+  text-align: left;
+}
+
+.btn {
+  padding: 3%;
+  border-radius: 20px;
+  border: 0;
+  width: 47%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  outline: 0;
+}
+
+.book-btn {
+
+  margin-bottom: 17%;
+
+}
+
+.photos {}
+
+.photo-title {
+  margin-left: 11%;
+  color: var(--orange);
+  font-size: 0.875rem;
+}
+
+.photo-text {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 3%;
+}
+
+.carousel {
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.carousel-container {
+  padding: 8px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carol-img {
+  width: 100%;
+  height: 80%;
+}
+
+.carousel-track {
+  list-style: none;
+  position: relative;
+  height: 300px;
+  transition: transform 250ms ease-in;
+  margin-top: 10%;
+}
+
+.slide-link {
+  text-decoration: none;
+  color: #293651;
+  font-size: 1.2rem;
+}
+
+.carousel-slide {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  /* height: 500px; */
+  top: 0;
+  bottom: 0;
+}
+
+.carousel-button {
+  position: absolute;
+  top: -6%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  width: 50%;
+}
+
+.carousel-left {
+  left: 3%;
+}
+
+.carousel-right {
+  right: 3%;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 25%;
+}
+
+.hide {
+  display: none;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.foot {
+  margin-left: 11%;
+}
+
+@media all and (min-width: 768px) {
+  .book-text {
+    font-size: 1.4rem;
+  }
+
+  .photo-title {
+    font-size: 1.3rem;
+  }
+
+  .photo-text {
+    font-size: 2rem;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 19%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .book-room {
+    padding: 12%;
+    flex-direction: row;
+  }
+
+  .book-room__img {
+    width: 50%;
+  }
+
+  .book {
+    width: 50%;
+  }
+}
