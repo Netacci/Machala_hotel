@@ -19,7 +19,7 @@
   color: var(--almost-black);
   font-size: 1.3rem;
   margin-top: 3%;
-  margin-left: 11%;
+  margin-left: 12%;
   font-weight: 600;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .about-body-wrap {
-  padding: 0 11%;
+  padding: 0 12%;
 }
 
 .about-pic {
@@ -65,8 +65,8 @@
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #F3684A;
   justify-self: center;
@@ -74,13 +74,13 @@
 }
 
 .fac-num {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--almost-black);
 }
 
 .fac-text {
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   color: var(--footer-text);
   grid-column: 2;
   margin-top: 3%;
@@ -88,7 +88,6 @@
 
 .btn {
   padding: 3%;
-  border-radius: 20px;
   border: 0;
   width: 47%;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
@@ -100,10 +99,66 @@
   background: var(--orange);
   color: #fff;
   padding: 2%;
-  border-radius: 16px;
   width: 33%;
-  margin-top: 8%;
+  margin-top: 4%;
+  transition: all .3s ease-out;
 }
+
+.about-btn:focus {
+  outline: none;
+}
+
+.about-btn:hover {
+  color: var(--orange);
+  background: #fff;
+  box-shadow: 0 0 0 2px var(--orange);
+
+}
+
+.top-picks {
+  margin-top: 10%;
+}
+
+.top-pick-section {
+  padding: 0 12%;
+}
+
+.top-images {
+  margin-top: 5%;
+}
+
+.top-pick-img {
+  width: 100%;
+}
+
+.room-name {
+  color: var(--almost-black);
+}
+
+.room-price {
+  color: var(--almost-black);
+  font-size: 0.875rem;
+}
+
+.per {
+  color: var(--orange);
+  font-size: 0.675rem;
+  margin-top: 3%;
+}
+
+.star {
+  width: 35%;
+  margin-top: 3%;
+}
+
+.top-pick-prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-top: 5%;
+  box-shadow: 0px 6px 3px 0px #FFF9F9;
+}
+
 
 .book-room {
   display: flex;
@@ -134,6 +189,7 @@
 }
 
 .book-btn {
+  border-radius: 20px;
   margin-bottom: 17%;
   color: var(--orange);
   transition: all .3s ease-out;
@@ -153,6 +209,11 @@
   margin-left: 11%;
   color: var(--orange);
   font-size: 0.875rem;
+}
+
+.picks-title {
+  margin-left: 12%;
+
 }
 
 .photo-text {
@@ -380,7 +441,7 @@
 
 .copy-text {
   color: var(--footer-text);
-  font-size: 0.775rem;
+  font-size: 0.675rem;
 }
 
 .copy-p {
@@ -394,12 +455,36 @@ hr {
 }
 
 @media all and (min-width: 768px) {
+  .about-pic {
+    transition: all .3s ease-in-out;
+  }
+
+  .about-pic:hover {
+    transform: translateZ(20px);
+  }
+
+  .fac-num {
+    font-size: 1.4rem;
+  }
+
+  .fac-text {
+    font-size: 0.765rem;
+  }
+
   .book-text {
     font-size: 1.4rem;
   }
 
   .photo-title {
     font-size: 1.3rem;
+  }
+
+  .top-pick-img {
+    transition: all .3s ease-in-out;
+  }
+
+  .top-pick-img:hover {
+    transform: translateX(20px);
   }
 
   .photo-text {
@@ -409,7 +494,7 @@ hr {
 
   .about-text {
     font-size: 2rem;
-    width: 40%;
+    width: 41%;
   }
 
   .carousel-right {
@@ -445,6 +530,11 @@ hr {
   .carol-img {
     width: 70%;
     height: 100%;
+    transition: all .3s ease-in-out;
+  }
+
+  .carol-img:hover {
+    transform: scale(1.5);
   }
 
   .carousel {
@@ -476,7 +566,33 @@ hr {
 
   .about-btn {
     padding: 3%;
-    width: 45%
+    width: 45%;
+    margin-top: 0;
+  }
+
+  .about-text,
+  .photo-text {
+    margin-top: 1%;
+  }
+
+  .top-pick-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4%;
+    margin-top: 2%;
+
+  }
+
+  .top-picks {
+    margin-top: 1%;
+  }
+
+  .top-images {
+    height: 120%;
+  }
+
+  .top-pick-img {
+    height: 100%;
   }
 
   .photo-title {
@@ -504,7 +620,7 @@ hr {
   }
 
   .book-room {
-    padding: 12% 12% 5% 12%;
+    padding: 15% 12% 5% 12%;
     flex-direction: row;
   }
 
