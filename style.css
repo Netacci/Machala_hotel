@@ -749,7 +749,7 @@ form {
   font-weight: 500;
   font-size: 1.3rem;
   color: #f3684a;
-  padding: 5% 0% 1% 10%;
+  padding: 5% 0% 6% 10%;
 }
 
 .pre-slider .review {
@@ -760,7 +760,7 @@ form {
 
 .pre-slider .single-file {
   width: 90%;
-  height: 55vh;
+  height: 60vh;
   overflow: hidden;
   margin: 0px auto;
 }
@@ -769,7 +769,7 @@ form {
   width: 60px;
   height: 50px;
   position: absolute;
-  top: 85%;
+  top: 90%;
   right: 30px;
   cursor: pointer;
 }
@@ -778,7 +778,7 @@ form {
   width: 60px;
   height: 50px;
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 30px;
   cursor: pointer;
 }
