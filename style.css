@@ -115,7 +115,7 @@ header {
 }
 
 #slogan {
-  margin-top: 4%;
+  margin-top: 21%;
 }
 
 #slogan p {
@@ -303,6 +303,10 @@ form {
   .logo {
     margin-left: 2%;
     width: 21%;
+  }
+
+  #slogan {
+    margin-top: 4%;
   }
 
   .hamburger,
