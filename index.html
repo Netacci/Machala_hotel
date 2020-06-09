@@ -5,12 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Machala Hotel</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <header>
+      <nav id="nav-bar">
+        <img src="./logo.svg" alt="" class="logo" />
+
+        <div id="inner-nav">
+          <ul>
+            <li id="rooms"><a href="#">Rooms</a></li>
+
+            <li id="about"><a href="#">About us</a></li>
+
+            <li id="facilities"><a href="#">Facilities</a></li>
+            <li id="contact"><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="header-content">
+        <div id="heading"><p>MACHALA ROYAL HOTEL</p></div>
+        <div id="slogan">
+          <p>
+            Your comfort is<br />
+            Our happiness
+          </p>
+        </div>
+        <div id="appeal">
+          <p>
+            Enjoy luxury and experience world class hospitality <br />
+            with highest standards in hotel services
+          </p>
+        </div>
+      </div>
+    </header>
+    <div id="form">
+      <form action="#" method="POST" id="check-in">
+        <div class="form-element">
+          <label for="arrival-date" class="form-label">CHECK IN</label>
+          <input
+            type="date"
+            name="arrival-date"
+            id=""
+            placeholder="Arrival Date"
+            class="inputs"
+          />
+        </div>
+        <div class="form-element">
+          <label for="depature-date" class="form-label">CHECK OUT</label>
+          <input
+            type="date"
+            name="depature-date"
+            id=""
+            placeholder="Arrival Date"
+            class="inputs"
+          />
+        </div>
+        <div class="form-element">
+          <label for="persons" class="form-label">PERSON</label>
+          <input
+            type="number"
+            name="persons"
+            id=""
+            placeholder="Number of guests"
+            class="inputs"
+          />
+        </div>
+        <button id="btn-header">
+          Book Now
+        </button>
+      </form>
+    </div>
     <div class="wrapper">
       <div class="aboutus" id="about">
         <p class="photo-title picks-title">ABOUT US</p>
