@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
+/* variables */
+
 :root {
   --pink-bg: #fbf5f5;
   --orange: #f3684a;
   --almost-black: #2d2a2a;
   --footer-text: #7d7878;
 }
+
 /*header start*/
-/*header dev*/
+/*header dev done by Popeashiedu*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./img/homepage.jpg);
@@ -21,6 +24,7 @@ header {
 
   color: #ffffff;
 }
+
 /*header end*/
 
 /*navbar start*/
@@ -28,39 +32,72 @@ header {
   display: flex;
   padding: 2rem;
   list-style: none;
-  max-width: 77%;
   margin: auto;
 }
 
-/* #inner-nav ul {
-  list-style: none;
-  display: flex;
-} */
-
-/* #inner-nav ul li {
-  margin-left: 5rem;
-  font-size: 150%;
-  margin-top: 1rem;
-} */
 #inner-nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #f3684a;
   transition: all 0.3s ease-in-out;
 }
-#inner-nav ul li a:hover {
+
+/* #inner-nav ul li a:hover {
   color: #f3684a;
+} */
+
+.navlist li {
+  list-style: none;
 }
+
+#hamclose {
+  display: none;
+}
+
+.navlist {
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navlist.show {
+  display: flex;
+  text-align: center;
+  line-height: 32px;
+  transition: .9s ease-in-out;
+  box-shadow: 0px 4px 10px 4px #222;
+  padding: 2%;
+  position: absolute;
+  top: 23%;
+  left: 9%;
+  background: #fff;
+  width: 83%;
+}
+
+
+.hamburger,
+.hamclose {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 6%;
+}
+
+.hamburger:focus,
+.hamclose:focus {
+  outline: none;
+}
+
+.fa-bars,
+.fa-times {
+  font-size: 1.5rem;
+}
+
 /*navbar end*/
 
 /*Header content starts*/
 #header-content {
   max-width: 77%;
-}
-
-#heading,
-#slogan,
-#appeal {
-  margin-left: 5rem;
 }
 
 #heading p {
@@ -71,13 +108,14 @@ header {
   line-height: 130.19%;
   font-style: normal;
 }
+
 #heading {
   margin-top: 1rem;
   background: #f3684a;
 }
 
 #slogan {
-  margin-top: 0.5rem;
+  margin-top: 4%;
 }
 
 #slogan p {
@@ -87,7 +125,7 @@ header {
 }
 
 #appeal {
-  margin-top: 0.7rem;
+  margin-top: 5%;
 }
 
 /*Header content ends*/
@@ -111,6 +149,7 @@ form {
   flex-direction: column;
   margin: 1.5rem;
   padding: 1rem;
+  margin-top: 4%;
 }
 
 .form-label {
@@ -139,9 +178,11 @@ form {
   margin-bottom: 10%;
   margin-left: 24%;
 }
+
 #btn-header:focus {
   outline: 0;
 }
+
 #btn-header:hover {
   color: #f3684a;
   background: #ffffff;
@@ -158,47 +199,46 @@ form {
     max-width: 100vw;
     padding: 1px;
   }
+
   #nav-bar {
-    display: flex;
     padding: 0rem;
-    list-style: none;
-    max-width: 77%;
     padding-top: 1rem;
-    margin-left: 0rem;
+    margin-left: 0;
+    justify-content: space-between;
   }
+
   .logo {
     width: 45%;
-    margin-left: 18%;
+    margin-left: 16%;
   }
-  #inner-nav {
-    display: none;
-  }
+
+
+
   #heading p {
     background: #f3684a;
     padding: 0.3rem;
     font-size: 0.575rem;
     text-align: center;
   }
+
   #heading {
-    margin-top: 1rem;
     max-width: 100%;
-    width: 80%;
+    width: 63%;
+    margin-left: -9%;
   }
-  #heading,
+
   #slogan,
   #appeal {
     margin-left: 0rem;
     text-align: center;
   }
+
   #header-content {
     display: flex;
     flex-direction: column;
     max-width: 93%;
     justify-items: center;
     align-items: center;
-  }
-  #slogan {
-    margin-top: 0.5rem;
   }
 
   #slogan p {
@@ -209,25 +249,24 @@ form {
     margin-top: 1rem;
   }
 
-  #appeal {
-    margin-top: 0.7rem;
-  }
-
   #appeal p {
     font-size: 0.575rem;
     text-align: center;
     margin-top: 8%;
     line-height: 1.7;
   }
+
   #form {
     max-width: 100vw;
     margin: 0;
   }
+
   #check-in {
     display: flex;
     flex-direction: column;
     padding: 0 11%;
   }
+
   .form-element {
     display: flex;
     flex-direction: column;
@@ -242,10 +281,12 @@ form {
     margin-bottom: 0.2rem;
     text-align: center;
   }
+
   .inputs {
     width: 100%;
     padding: 0.7rem;
   }
+
   #btn {
     width: 91%;
     background: #f3684a;
@@ -263,6 +304,22 @@ form {
     margin-left: 2%;
     width: 21%;
   }
+
+  .hamburger,
+  .hamclose {
+    display: none;
+  }
+
+  #inner-nav ul li a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #inner-nav ul li a:hover {
+    color: #f3684a;
+  }
+
+
   #nav-bar {
     display: flex;
     padding: 0rem;
@@ -273,10 +330,13 @@ form {
     justify-content: space-between;
     margin-top: 3%;
   }
+
   #heading {
-    margin-top: 5%;
-    width: 49%;
+    margin-top: 2%;
+    width: 39%;
+    margin-left: -33%;
   }
+
   #header-content {
     display: flex;
     flex-direction: column;
@@ -284,6 +344,7 @@ form {
     justify-items: center;
     align-items: center;
   }
+
   #heading p {
     background: #f3684a;
     padding: 0.3rem;
@@ -292,6 +353,7 @@ form {
     margin-top: 10%;
     margin: auto;
   }
+
   #slogan p {
     font-size: 1.7rem;
     font-weight: bold;
@@ -299,10 +361,12 @@ form {
     text-align: center;
     margin-top: 10%;
   }
+
   #appeal p {
     font-size: 0.875rem;
     margin-top: 3%;
   }
+
   #btn {
     width: 47%;
     background: #f3684a;
@@ -313,27 +377,34 @@ form {
     padding: 0.8rem;
     margin: 1rem auto 1rem auto;
   }
+
   .form-label {
     color: #f3684a;
     font-weight: 800;
-    font-size: small;
+    font-size: 1rem;
     margin-bottom: 0.2rem;
     text-align: center;
   }
+
   #inner-nav {
     order: 2;
     display: flex;
     margin-top: 1%;
+    width: 55%;
   }
 
   #inner-nav ul {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
   }
+
   #inner-nav ul li {
     margin-left: 1rem;
     font-size: 0.775rem;
   }
+
   #btn-header {
     font-size: 1rem;
     padding: 2%;
@@ -348,22 +419,23 @@ form {
     max-width: 100vw;
     /* overflow: hidden; */
   }
+
   #nav-bar {
     display: flex;
     list-style: none;
     margin: auto;
     margin-top: 2%;
   }
+
   .logo {
-    margin-left: 4%;
+    margin-left: 1%;
   }
 
   #inner-nav ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1em;
+
   }
+
   #inner-nav ul li {
     font-size: 1rem;
   }
@@ -372,6 +444,7 @@ form {
     text-decoration: none;
     color: #ffffff;
   }
+
   #header-content {
     width: 50%;
     height: 57%;
@@ -380,11 +453,11 @@ form {
   #heading {
     margin-top: 10%;
     width: 50%;
-    margin-left: 6%;
+    margin-left: 0%;
   }
 
   #slogan {
-    margin-left: 51%;
+    margin-left: 47%;
     width: 100%;
     margin-top: 0%;
   }
@@ -394,11 +467,12 @@ form {
     line-height: 125.19%;
     text-align: left;
   }
+
   #appeal {
     margin-top: 0.7rem;
     width: 100%;
     margin-left: 18%;
-    margin-left: 51%;
+    margin-left: 47%;
   }
 
   #appeal p {
@@ -406,6 +480,7 @@ form {
     margin-top: 0rem;
     text-align: left;
   }
+
   form {
     display: flex;
     justify-content: space-between;
@@ -419,6 +494,7 @@ form {
     width: 73%;
     margin-left: 13%;
   }
+
   #check-in {
     display: flex;
     flex-direction: row;
@@ -461,9 +537,9 @@ form {
     margin: 0;
   }
 }
-@media all and (min-width: 1600px) {
-}
-/*Header part*/
+
+/*Done by Netacci*/
+/* about-us section */
 .aboutus {
   margin-top: 5%;
 }
@@ -504,6 +580,7 @@ form {
   }
 }
 
+/* number of facilities listed */
 .facility-number {
   display: flex;
   justify-content: space-around;
@@ -537,34 +614,7 @@ form {
   margin-top: 3%;
 }
 
-.btn {
-  padding: 3%;
-  border: 0;
-  width: 47%;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
-  outline: 0;
-  cursor: pointer;
-}
-
-.about-btn {
-  background: var(--orange);
-  color: #fff;
-  padding: 2%;
-  width: 33%;
-  margin-top: 4%;
-  transition: all 0.3s ease-out;
-}
-
-.about-btn:focus {
-  outline: none;
-}
-
-.about-btn:hover {
-  color: var(--orange);
-  background: #fff;
-  box-shadow: 0 0 0 2px var(--orange);
-}
-
+/* top picks section */
 .top-picks {
   margin-top: 10%;
 }
@@ -609,6 +659,8 @@ form {
   box-shadow: 0px 6px 3px 0px #fff9f9;
 }
 
+/* book room section */
+
 .book-room {
   display: flex;
   padding: 10%;
@@ -637,22 +689,7 @@ form {
   text-align: left;
 }
 
-.book-btn {
-  border-radius: 20px;
-  margin-bottom: 17%;
-  color: var(--orange);
-  transition: all 0.3s ease-out;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.book-btn:hover {
-  color: #fff;
-  background: var(--orange);
-  box-shadow: 0 0 0 2px #fff;
-}
+/* carousel section */
 
 .photo-title {
   margin-left: 11%;
@@ -745,6 +782,8 @@ form {
   justify-content: center;
   padding: 10px 0;
 }
+
+/* footer */
 
 .foot {
   margin-left: 11%;
@@ -896,6 +935,55 @@ hr {
   width: 86%;
   grid-column: 1/3;
 }
+
+/* buttons */
+
+.btn {
+  padding: 3%;
+  border: 0;
+  width: 47%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  outline: 0;
+  cursor: pointer;
+}
+
+.about-btn {
+  background: var(--orange);
+  color: #fff;
+  padding: 2%;
+  width: 33%;
+  margin-top: 4%;
+  transition: all 0.3s ease-out;
+}
+
+.about-btn:focus {
+  outline: none;
+}
+
+.about-btn:hover {
+  color: var(--orange);
+  background: #fff;
+  box-shadow: 0 0 0 2px var(--orange);
+}
+
+.book-btn {
+  border-radius: 20px;
+  margin-bottom: 17%;
+  color: var(--orange);
+  transition: all 0.3s ease-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.book-btn:hover {
+  color: #fff;
+  background: var(--orange);
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* Media queries */
 
 @media all and (min-width: 768px) {
   .about-pic {
