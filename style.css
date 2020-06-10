@@ -13,6 +13,10 @@
   --footer-text: #7d7878;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /*header start*/
 /*header dev done by Popeashiedu*/
 header {
