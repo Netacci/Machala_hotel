@@ -64,7 +64,7 @@ header {
   text-align: center;
   line-height: 32px;
   transition: .9s ease-in-out;
-  box-shadow: 0px 4px 3px 0px #f9f9f9;
+  box-shadow: 0px 0px 2px 0px #f9f9f9;
   padding: 2%;
   position: absolute;
   top: 23%;
@@ -738,9 +738,9 @@ form {
 }
 
 .post .post-one {
-  padding: 15px;
+  padding: 6px;
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
 }
 
 .pre-slider {
@@ -749,15 +749,15 @@ form {
 
 .pre-slider .review-title {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 0.875rem;
   color: #f3684a;
   padding: 5% 0% 1% 10%;
 }
 
 .pre-slider .review {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   padding-left: 10%;
-  padding-bottom: 4%x;
+  /* padding-bottom: 4%; */
 }
 
 .pre-slider .single-file {
@@ -771,7 +771,7 @@ form {
   width: 60px;
   height: 50px;
   position: absolute;
-  top: 85%;
+  top: 93%;
   right: 30px;
   cursor: pointer;
 }
@@ -780,7 +780,7 @@ form {
   width: 60px;
   height: 50px;
   position: absolute;
-  top: 85%;
+  top: 93%;
   left: 30px;
   cursor: pointer;
 }
@@ -1187,6 +1187,16 @@ hr {
     font-size: 1.3rem;
   }
 
+  .pre-slider .review-title {
+    font-size: 1.3rem;
+  }
+
+  .pre-slider .review {
+    font-size: 2rem;
+    width: 61%;
+
+  }
+
   .top-pick-img {
     transition: all 0.3s ease-in-out;
   }
@@ -1327,7 +1337,7 @@ hr {
   }
 
   .book-room {
-    padding: 15% 12% 5% 12%;
+    padding: 5% 12% 5% 12%;
     flex-direction: row;
   }
 
