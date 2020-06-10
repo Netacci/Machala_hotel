@@ -7,6 +7,7 @@ const slides = Array.from(track.children);
 const nextButton = document.querySelector(".carousel-right");
 const prevButton = document.querySelector(".carousel-left");
 const slideWidth = slides[0].getBoundingClientRect().width;
+const topNav = document.querySelector('.top-nav');
 
 //FUNCTIONS
 
@@ -36,20 +37,13 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     nextButton.classList.remove("hide");
   }
 };
-//event listeners
-hamburger.addEventListener("click", () => {
-  nav.classList.add("show");
-  nav.classList.remove("hide");
-  hamburger.style.display = "none";
-  hamclose.style.display = "block";
-});
 
-hamclose.addEventListener("click", () => {
-  nav.classList.remove("show");
-  nav.classList.add("hide");
-  hamclose.style.display = "none";
-  hamburger.style.display = "block";
-});
+const showNav = (e) => {
+  topNav.classList.toggle('visible');
+}
+//event listeners
+bar.addEventListener('click', showNav);
+
 prevButton.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".current-slide");
   const prevSlide = currentSlide.previousElementSibling;
