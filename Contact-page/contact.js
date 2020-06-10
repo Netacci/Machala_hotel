@@ -59,3 +59,27 @@ nextButton.addEventListener("click", (e) => {
   moveToSlide(track, currentSlide, nextSlide);
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
+
+// function initMap() {
+//   // The location of Uluru
+//   var uluru = {lat: -25.344, lng: 131.036};
+//   // The map, centered at Uluru
+//   var map = new google.maps.Map(
+//       document.getElementById('map'), {zoom: 4, center: uluru});
+//   // The marker, positioned at Uluru
+//   var marker = new google.maps.Marker({position: uluru, map: map});
+// }
+
+function initMap() {
+  var options = {
+    zoom:15,
+    center: {lat:6.4478, lng:3.4723}
+  };
+
+  var lekki = {lat:6.4478, lng:3.4723};
+
+  var map = new google.maps.Map(document.querySelector('#map'), options);
+
+  var marker = new google.maps.Marker({position:lekki, map:map})
+
+}
