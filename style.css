@@ -64,7 +64,7 @@ header {
   text-align: center;
   line-height: 32px;
   transition: .9s ease-in-out;
-  box-shadow: 0px 4px 3px 0px #f9f9f9;
+  box-shadow: 0px 0px 2px 0px #f9f9f9;
   padding: 2%;
   position: absolute;
   top: 23%;
