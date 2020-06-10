@@ -13,6 +13,10 @@
   --footer-text: #7d7878;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /*header start*/
 header {
   background: url('https://res.cloudinary.com/dhypceiuh/image/upload/v1591805198/img/room-header_qhbuow.jpg');
@@ -123,13 +127,6 @@ header {
   font-size: 0.775rem;
 }
 
-/* #inner-nav ul li a:hover {
-  color: #f3684a;
-} */
-
-.navlist li {
-  list-style: none;
-}
 
 #hamclose {
   display: none;
