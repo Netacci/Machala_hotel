@@ -65,3 +65,19 @@ nextButton.addEventListener("click", (e) => {
   moveToSlide(track, currentSlide, nextSlide);
   hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
+
+$(document).ready(function () {
+  $(".review-wrapper").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    nextArrow: $(".next"),
+    prevArrow: $(".prev"),
+  });
+
+  $(".single-file").slick({
+    nextArrow: $(".plus"),
+    prevArrow: $(".neg"),
+  });
+});

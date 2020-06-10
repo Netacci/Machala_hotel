@@ -74,7 +74,6 @@ header {
   border: 2px solid var(--orange);
 }
 
-
 .hamburger,
 .hamclose {
   background-color: transparent;
@@ -213,8 +212,6 @@ form {
     margin-left: 16%;
   }
 
-
-
   #heading p {
     background: #f3684a;
     padding: 0.3rem;
@@ -323,7 +320,6 @@ form {
   #inner-nav ul li a:hover {
     color: #f3684a;
   }
-
 
   #nav-bar {
     display: flex;
@@ -438,7 +434,6 @@ form {
 
   #inner-nav ul {
     list-style: none;
-
   }
 
   #inner-nav ul li {
@@ -662,6 +657,183 @@ form {
   justify-items: center;
   margin-top: 5%;
   box-shadow: 0px 6px 3px 0px #fff9f9;
+}
+
+.page-wrapper {
+  margin-top: 8%;
+}
+
+.post-slider {
+  position: relative;
+}
+
+.post-slider .review-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #f3684a;
+  padding: 5% 0% 1% 12%;
+}
+
+.post-slider .review {
+  font-size: 1.8rem;
+  padding-left: 12%;
+}
+
+.post-slider .review-wrapper {
+  width: 70%;
+  height: 30%;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.post-slider .next {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 55%;
+  right: 12%;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 55%;
+  left: 12%;
+  cursor: pointer;
+}
+
+.post-slider .review-wrapper .post {
+  position: relative;
+  width: 25%;
+  height: 55vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.post .picture-one {
+  margin-bottom: 0;
+}
+
+.picture-one .pic-one {
+  position: absolute;
+  top: 15%;
+  left: 20px;
+}
+
+.picture-one .pic-name {
+  position: absolute;
+
+  top: 13%;
+  left: 35%;
+}
+
+.picture-one .pic-title {
+  position: absolute;
+
+  top: 20%;
+  left: 35%;
+}
+
+.post .post-one {
+  padding: 15px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.pre-slider {
+  position: relative;
+}
+
+.pre-slider .review-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #f3684a;
+  padding: 5% 0% 1% 10%;
+}
+
+.pre-slider .review {
+  font-size: 1.8rem;
+  padding-left: 10%;
+  padding-bottom: 4%x;
+}
+
+.pre-slider .single-file {
+  width: 90%;
+  height: 55vh;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.pre-slider .plus {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 85%;
+  right: 30px;
+  cursor: pointer;
+}
+
+.pre-slider .neg {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 85%;
+  left: 30px;
+  cursor: pointer;
+}
+
+.pre-slider .single-file .post {
+  position: relative;
+  width: 80%;
+  height: 50vh;
+
+  display: inline-block;
+}
+
+.post .picture-one {
+  padding-bottom: 10px;
+}
+
+.picture-one .pic-one {
+  position: absolute;
+  top: 10%;
+  left: 20px;
+}
+
+.picture-one .pic-name {
+  position: absolute;
+
+  top: 13%;
+  left: 35%;
+}
+
+.picture-one .pic-title {
+  position: absolute;
+
+  top: 20%;
+  left: 35%;
+}
+
+.post .post-two {
+  padding: 15px 0px 0px 30px;
+  position: absolute;
+  bottom: 15%;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 1100px) {
+  .post-slider {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1110px) {
+  .pre-slider {
+    display: none;
+  }
 }
 
 /* book room section */
