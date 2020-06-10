@@ -21,7 +21,7 @@ body {
 
 /* HEADER STYLES */
 header {
-    background: url('./img/contact-header-img.jpg');
+    background: url('https://res.cloudinary.com/dhypceiuh/image/upload/v1591792444/contact-img/contact-header-img_mc7rtv.jpg');
     height: 30vh;
     color: white;
     background-repeat: no-repeat;
@@ -48,19 +48,20 @@ header {
     text-align: center;
     line-height: 32px;
     transition: .9s ease-in-out;
-    box-shadow: 0px 4px 10px 4px #222;
+    box-shadow: 0px 4px 3px 0px #f9f9f9;
     padding: 2%;
     position: absolute;
     top: 23%;
     left: 9%;
     background: #fff;
     width: 83%;
+    border: 2px solid var(--orange);
+    z-index: 9999;
 }
 
 .navlist {
     width: 100%;
     flex-direction: column;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
@@ -126,10 +127,9 @@ header {
 
 /* MAP SECTION */
 #map {
-    padding: 3.5em 12em;
-    /* height: 40vh; */
+    margin: 1.5em 1em;
+    height: 30vh;
 }
-
 
 /* CONTACT SECTION */
 #contact {
@@ -154,6 +154,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 4%;
 }
 
 #contact textarea {
@@ -207,10 +208,10 @@ input::placeholder {
 
 /* CONTACT DETAILS SECTION */
 #contact-details {
-    margin-top: 19%;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    border-bottom: 0.5px solid #CAC7C7;
+    padding-bottom: 2em;
+    margin: 3em 1em;
+    display: block;
 
 }
 
@@ -218,33 +219,39 @@ input::placeholder {
 .detail i {
     background: #F3684A;
     color: white;
-    padding: .5em .6em;
+    padding: 1em;
     border: 1px solid transparent;
     border-radius: 50%;
 }
 
-.msg-icon {
-    font-size: 1.2rem;
+#msg-icon {
+
+    padding: 1em;
 }
 
 .detail {
     margin-top: 4%;
+    display: flex;
+    align-content: center;
 }
 
 .detail-text {
+
     margin-top: 1em;
+    margin-left: 1.5em;
 }
 
 .detail-text h3 {
     color: #2D2A2A;
     margin-bottom: .3em;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+
 }
 
 .detail-text p {
     color: #4A4A4A;
     line-height: 1.5;
-    font-size: 0.675rem;
+    /* font-size: 0.675rem; */
 }
 
 /* book room section */
@@ -257,7 +264,7 @@ input::placeholder {
 
 .book-room__img {
     width: 100%;
-    box-shadow: 0px 0px 15px 12px #fff9f9;
+
 }
 
 .book {
@@ -555,6 +562,7 @@ hr {
 @media all and (min-width:768px) {
     header {
         height: 40vh;
+        padding: 0em 1em;
     }
 
     .hamburger,
@@ -578,8 +586,74 @@ hr {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 1em;
         margin-top: 1%;
-        width: 55%;
+        width: 66%;
 
+    }
+
+    #map {
+        margin: 3.5em 1em;
+        height: 50vh;
+    }
+
+    #contact {
+        padding: 0em 4em;
+
+    }
+
+    #contact p {
+        font-size: 1.3rem;
+    }
+
+    #contact h3 {
+        font-size: 2rem;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 248px;
+        width: 100%;
+        grid-gap: 1.5em;
+    }
+
+    #contact textarea {
+
+        resize: none;
+        height: auto;
+    }
+
+    .inputs-div {
+        grid-gap: 1.5em;
+        margin-top: 0;
+    }
+
+    textarea::placeholder,
+    input::placeholder {
+        font-size: 0.875rem;
+    }
+
+    .btn-contact {
+        padding: 1em;
+    }
+
+    #contact-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 3em 6em 0em 6em;
+        padding-bottom: 4em;
+    }
+
+    .detail {
+        display: block;
+        margin-top: 0;
+    }
+
+    .detail-text {
+        margin-left: 0;
+    }
+
+    #msg-icon {
+        padding: .5em;
     }
 
     .book-text {
@@ -651,12 +725,27 @@ hr {
 }
 
 @media all and (min-width:1024px) {
+
+    .navlist {
+        width: 55%;
+
+    }
+
+    #map {
+        margin: 3.5em 6em;
+    }
+
     .photo-text {
         margin-top: 1%;
     }
 
     .photo-title {
         margin-left: 12%;
+    }
+
+    #contact {
+
+        padding: 0em 6em;
     }
 
     .book-room {

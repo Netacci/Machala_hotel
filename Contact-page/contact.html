@@ -19,7 +19,7 @@
     <header>
       <div class="main-head">
         <nav class="top-nav">
-          <img src="./img/logo.svg" alt="" class="contact-logo" />
+          <img src="./contact-img/logo.svg" alt="" class="contact-logo" />
           <button class="hamburger" id="bar">
             <i class="fas fa-bars"></i>
           </button>
@@ -29,7 +29,7 @@
 
           <div class="navlist hide" id="contact-nav">
             <a class="nav-item" href="#">Rooms</a>
-            <a class="nav-item" href="#">About Us</a>
+            <a class="nav-item" href="/Machala_Hotel/index.html">About Us</a>
             <a class="nav-item" href="#">Facilities</a>
             <a class="nav-item" href="#">Contact Us</a>
           </div>
@@ -42,14 +42,17 @@
       </div>
     </header>
 
-    <!-- <section id="map">
-      <img src="Capture.PNG" alt="map" />
-    </section> -->
+    <section id="map"></section>
 
     <section id="contact">
       <p>CONTACT</p>
       <h3>Contact us to get free support.</h3>
       <form action="">
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message here"
+        ></textarea>
         <div class="inputs-div">
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="email" name="email" id="email" placeholder="Email" />
@@ -59,16 +62,6 @@
             id="date"
             placeholder="Date of complaint"
           />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Your message here"
-          ></textarea>
-          <!-- <div class="submit-div">
-                    <input type="submit" value="Send">
-                    <!<img src="icon-arrow.svg" alt=""> -->
-          <!-- <i class="fas fa-arrow-right"></i>
-                </div> -->
           <div class="btn-div">
             <button class="btn-contact">
               Send
@@ -81,7 +74,7 @@
 
     <section id="contact-details">
       <div class="detail">
-        <i class="far fa-envelope fa-2x msg-icon"></i>
+        <i class="far fa-envelope fa-2x" id="msg-icon"></i>
         <div class="detail-text">
           <h3>Email</h3>
           <p>machala@gmail.com</p>
@@ -90,7 +83,7 @@
       </div>
 
       <div class="detail">
-        <i class="fas fa-phone-volume fa-2x msg-icon"></i>
+        <i class="fas fa-phone-volume fa-2x" id="msg-icon"></i>
         <div class="detail-text">
           <h3>Phone Number</h3>
           <p>+234 816 0877 462</p>
@@ -99,7 +92,7 @@
       </div>
 
       <div class="detail">
-        <i class="fas fa-map-marker-alt fa-2x msg-icon"></i>
+        <i class="fas fa-map-marker-alt fa-2x" id="msg-icon"></i>
         <div class="detail-text">
           <h3>Location</h3>
           <p>No 10, Lekki Phase 1</p>
@@ -108,7 +101,11 @@
       </div>
     </section>
     <div class="book-room">
-      <img src="./img/book-img.jpg" alt="" class="book-room__img" />
+      <img
+        src="https://res.cloudinary.com/dhypceiuh/image/upload/v1591737213/img/book-img_bkwyrb.jpg"
+        alt=""
+        class="book-room__img"
+      />
       <div class="book">
         <h2 class="book-text">
           Do you need a cozy place to rest & chill after work and Lagos wahala??
@@ -122,31 +119,47 @@
     </div>
     <div class="carousel">
       <button class="carousel-button carousel-left hide">
-        <img src="./img/left-arrow.svg" alt="" class="left-arrow" />
+        <img src="./contact-img/left-arrow.svg" alt="" class="left-arrow" />
       </button>
       <div class="carousel-container">
         <ul class="carousel-track">
           <li class="carousel-slide current-slide">
-            <img class="carol-img" src="./img/carousel-img1.jpg" alt="" />
+            <img
+              class="carol-img"
+              src="https://res.cloudinary.com/dhypceiuh/image/upload/v1591737184/img/carousel-img1_fkg40z.jpg"
+              alt=""
+            />
           </li>
           <li class="carousel-slide">
-            <img class="carol-img" src="./img/carousel-img2.jpg" alt="" />
+            <img
+              class="carol-img"
+              src="https://res.cloudinary.com/dhypceiuh/image/upload/v1591793150/img/carousel-img2_hxl344.jpg"
+              alt=""
+            />
           </li>
           <li class="carousel-slide">
-            <img class="carol-img" src="./img/carousel-img3.jpg" alt="" />
+            <img
+              class="carol-img"
+              src="https://res.cloudinary.com/dhypceiuh/image/upload/v1591737145/img/carousel-img3_iuzsfs.jpg"
+              alt=""
+            />
           </li>
           <li class="carousel-slide">
-            <img class="carol-img" src="./img/carousel-img4.jpg" alt="" />
+            <img
+              class="carol-img"
+              src="https://res.cloudinary.com/dhypceiuh/image/upload/v1591793156/img/carousel-img4_h1wgba.jpg"
+              alt=""
+            />
           </li>
         </ul>
       </div>
       <button class="carousel-button carousel-right">
-        <img src="./img/right-arrow.svg" alt="" class="right-arrow" />
+        <img src="./contact-img/right-arrow.svg" alt="" class="right-arrow" />
       </button>
     </div>
     <footer class="foot">
       <div class="foot-logo">
-        <img src="./img/footer-logo.svg" alt="" class="foot-logo_img" />
+        <img src="./contact-img/footer-logo.svg" alt="" class="foot-logo_img" />
         <p class="foot-text">
           Enjoy luxury and experience world class hospitality with highest
           standards in hotel services. Machala royal hotel is truely home away
@@ -192,7 +205,7 @@
               placeholder="Your Email Address"
             />
             <button class="send-icon-btn">
-              <img src="./img/send-icon.svg" alt="" class="send-img" />
+              <img src="./contact-img/send-icon.svg" alt="" class="send-img" />
             </button>
           </div>
         </div>
@@ -212,5 +225,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="./contact.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpepBzap01FMMpEzssvba71TkbVZDpcSM&callback=initMap"
+    ></script>
   </body>
 </html>
