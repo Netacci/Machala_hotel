@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-/* variables */
-
 :root {
   --pink-bg: #fbf5f5;
   --orange: #f3684a;
@@ -13,51 +11,70 @@
   --footer-text: #7d7878;
 }
 
+
+#pagename,
+.home,
+main {
+  margin: auto;
+  max-width: 79%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/*header start*/
-header {
-  background: url('https://res.cloudinary.com/dhypceiuh/image/upload/v1591805198/img/room-header_qhbuow.jpg');
+
+/*navbar*/
+
+.container {
+  background-image: url(./img/nav_cover.svg);
   height: 30vh;
   color: white;
+  padding: 1px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 38% 101%;
+  background-position: 52% 101%;
   width: 100%;
 }
 
-/*header end*/
+.main-head {
+  padding: 1px;
+}
 
-/*navbar start*/
-.heading {
+#title {
+  padding: 0 8%;
+  margin-top: 5%;
+}
+
+#title h2 {
+  color: var(--orange);
+  font-size: 2rem;
+}
+
+#title p {
+  color: #fff;
+  letter-spacing: .05em;
+  font-size: 0.775rem;
+}
+
+
+.home {
+  color: var(--orange);
+
+}
+
+.home a {
+
+  text-decoration: none;
+  color: var(--orange);
+
+}
+
+#nav-bar {
   display: flex;
-  align-content: center;
-}
-
-.room-logo {
-  width: 23%;
-}
-
-.hide {
-  display: none;
-}
-
-.navlist.show {
-  display: flex;
-  text-align: center;
-  line-height: 32px;
-  transition: .9s ease-in-out;
-  box-shadow: 0px 0px 2px 0px #f9f9f9;
-  padding: 2%;
-  position: absolute;
-  top: 23%;
-  left: 9%;
-  background: #fff;
-  width: 83%;
-  border: 2px solid var(--orange);
-  z-index: 9999;
+  justify-content: space-between;
+  padding: 0 8%;
+  margin-top: 4%;
 }
 
 .navlist {
@@ -68,64 +85,9 @@ header {
 .nav-item {
   text-decoration: none;
   cursor: pointer;
-  color: var(--orange);
+  color: #F3684A;
 }
 
-#hamclose {
-  display: none;
-}
-
-.hamburger,
-.hamclose {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  margin-right: 6%;
-}
-
-.hamburger:focus,
-.hamclose:focus {
-  outline: none;
-}
-
-.fa-bars,
-.fa-times {
-  font-size: 1.5rem;
-  color: var(--orange);
-}
-
-.main-head {
-  padding: 1px;
-}
-
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8%;
-  margin-top: 4%;
-}
-
-.top-nav p {
-  /* border: 1px solid blue; */
-  margin-left: 5em;
-}
-
-.sub-head {
-  padding: 0 8%;
-  margin-top: 5%;
-}
-
-.sub-head h2 {
-  color: var(--orange);
-  font-size: 2rem;
-}
-
-.sub-head p {
-  color: #fff;
-  letter-spacing: .05em;
-  font-size: 0.775rem;
-}
 
 
 #hamclose {
@@ -135,14 +97,13 @@ header {
 .navlist {
   width: 100%;
   flex-direction: column;
-
 }
 
 .navlist.show {
   display: flex;
   text-align: center;
   line-height: 32px;
-  transition: .9s ease-in-out;
+  transition: 0.9s ease-in-out;
   box-shadow: 0px 0px 2px 0px #f9f9f9;
   padding: 2%;
   position: absolute;
@@ -150,7 +111,8 @@ header {
   left: 9%;
   background: #fff;
   width: 83%;
-  border: 2px solid var(--orange);
+  border: 2px solid #F3684A;
+  z-index: 9999;
 }
 
 .hamburger,
@@ -172,61 +134,85 @@ header {
   font-size: 1.5rem;
 }
 
-/*navbar end*/
 
+/*main*/
 
-/* top picks section */
-.about-text {
+.main .home {
+  margin-top: 5%;
+}
+
+.homes {
+  margin-top: 5%;
+  font-size: 0.875rem;
+  color: var(--orange);
+}
+
+.header {
   color: var(--almost-black);
   font-size: 1.3rem;
   margin-top: 3%;
-  margin-left: 9%;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.top-picks {
-  margin-top: 10%;
-}
 
-.top-pick-section {
-  padding: 0 8%;
-}
-
-.top-images {
-  margin-top: 5%;
-}
-
-.top-pick-img {
+.shrink {
   width: 100%;
 }
 
-.room-name {
-  color: var(--almost-black);
+.body {
+  margin-top: 5%;
 }
 
-.room-price {
-  color: var(--almost-black);
+
+
+.figcaption {
+  font-size: 0.875rem;
+
+}
+
+.nav-logo {
+  width: 23%;
+
+}
+
+#main-info {
+  position: relative;
+  margin-top: 4%;
+}
+
+#main-infos {
+  z-index: 1;
+  width: 75%;
+  height: 12%;
+  opacity: 0.92;
+  position: absolute;
+  background: #F3684A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
   font-size: 0.875rem;
 }
 
-.per {
-  color: var(--orange);
-  font-size: 0.675rem;
-  margin-top: 3%;
+/*media queries*/
+
+@media all and (min-width: 750px) {
+
+  #hamburger,
+  #hamclose {
+    display: none;
+  }
+
+  .container {
+    height: 40vh;
+    padding: 0 1em;
+
+  }
+
+
 }
 
-.star {
-  width: 35%;
-  margin-top: 3%;
-}
-
-.top-pick-prices {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  margin-top: 5%;
-  box-shadow: 0px 6px 3px 0px #fff9f9;
-}
 
 /* book room section */
 
@@ -238,7 +224,7 @@ header {
 
 .book-room__img {
   width: 100%;
-
+  box-shadow: 0px 0px 15px 12px #fff9f9;
 }
 
 .book {
@@ -258,7 +244,7 @@ header {
   text-align: left;
 }
 
-/* carousel section */
+/* slide*/
 
 .photo-title {
   margin-left: 11%;
@@ -267,7 +253,7 @@ header {
 }
 
 .picks-title {
-  margin-left: 9%;
+  margin-left: 12%;
 }
 
 .photo-text {
@@ -516,6 +502,16 @@ hr {
   cursor: pointer;
 }
 
+.booknow-btn {
+  background: #F3684A;
+  margin-bottom: 3%;
+  color: #fff;
+  transition: all 0.3s ease-out;
+  box-shadow: none;
+  margin-top: 4%;
+}
+
+
 .book-btn {
   border-radius: 20px;
   margin-bottom: 17%;
@@ -536,24 +532,23 @@ hr {
 /* Media queries */
 
 @media all and (min-width: 768px) {
-  header {
-    height: 40vh;
-    padding: 0em 1em;
+  #main-infos {
+    width: 45%;
+    height: 12%;
+  }
+
+  .homes {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    font-size: 2rem;
+    width: 66%;
   }
 
   .hamburger,
   .hamclose {
     display: none;
-  }
-
-  .nav-item {
-    color: var(--orange);
-    font-weight: 700;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .nav-item:hover {
-    color: #fff;
   }
 
   .navlist {
@@ -563,15 +558,15 @@ hr {
     grid-column-gap: 1em;
     margin-top: 1%;
     width: 66%;
-
   }
 
-  .book-text {
-    font-size: 1.4rem;
+  .nav-item {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
   }
 
-  .photo-title {
-    font-size: 1.3rem;
+  .nav-item:hover {
+    color: #F3684A;
   }
 
   .photo-text {
@@ -641,39 +636,43 @@ hr {
 @media all and (min-width: 1024px) {
   .navlist {
     width: 55%;
+  }
+
+  .figcaption {
+    font-size: 1.15rem;
+    width: 90%;
 
   }
 
-  .about-text,
+  .body {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+  }
+
+  .booknow-btn {
+    padding: 6%;
+    width: 100%;
+    margin-top: 0;
+
+  }
+
   .photo-text {
     margin-top: 1%;
   }
 
-  .top-pick-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 7.5em;
-    grid-column-gap: 6%;
-    margin-top: 2%;
-
+  .photo-title {
+    margin-left: 12%;
   }
 
-  .top-picks {
-    margin-top: 1%;
-    margin-bottom: 6%;
+  .facility-number {
+    grid-row: 2;
+    grid-column: 2;
   }
-
-  .top-images {
-    height: 100%;
-  }
-
-  .top-pick-img {
-    height: 100%;
-  }
-
 
   .book-room {
-    padding: 8% 12% 5% 12%;
+    padding: 4% 12% 5% 12%;
     flex-direction: row;
   }
 
@@ -794,6 +793,13 @@ hr {
 }
 
 @media all and (min-width: 1440px) {
+  .homes {
+
+    font-size: 1.5rem;
+  }
+
+
+
   .book-text {
     font-size: 2rem;
   }
